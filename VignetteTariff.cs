@@ -12,12 +12,8 @@ namespace VisibilityTariff {
 
         public void Update() {
             GameObject vignette = GameObject.FindGameObjectWithTag("Vignette");
-            Modding.Logger.Log("Update");
-            
 
             if (vignette == null) return;
-
-            Modding.Logger.Log(vignette.transform.localScale);
 
             vignette.transform.localScale = new Vector3(0.1875f, 0.28125f, 0.1875f) * VisibilityTariff.globalSettings.scaleFactor;
 
