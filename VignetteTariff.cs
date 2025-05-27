@@ -10,7 +10,7 @@ namespace VisibilityTariff {
             On.PlayMakerFSM.OnEnable += OnFsmEnable;
         }
 
-        public void Update() {
+        public void LateUpdate() {
             GameObject vignette = GameObject.FindGameObjectWithTag("Vignette");
 
             if (vignette == null) return;
